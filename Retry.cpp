@@ -11,5 +11,20 @@ int main(int argc, char* argv[]) {
     {
         std::cout << vec[i] <<"\n";
     }
+    std::cout << "----\n";
+    for (auto it = vec.begin(); it != vec.end(); ++it)
+    {
+        std::cout << *it << "\n";   
+    }
+    std::cout << "----\n";
+    for (int val : vec)
+    {
+        std::cout << val << "\n";   
+    }
+    std::cout << "----\n";
+    for(auto val:vec)
+    {
+        std::cout << val << "\n";   
+    }
     return 0;
 }
