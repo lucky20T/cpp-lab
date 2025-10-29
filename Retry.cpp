@@ -37,6 +37,23 @@ class Student
     }
 };
 
+int main(int argc, char* argv[])
+{
+    std::vector<Student> students;
+    students.emplace_back("John", "Doe", 20, 1);
+    students.emplace_back("Jane", "Smith", 22, 2);
+    students.emplace_back("Alice", "Johnson", 19, 3);
+
+    for (const auto& student : students)
+    {
+        std::cout << "ID: " << student.getId() 
+                  << ", Name: " << student.getFirst() << " " << student.getLast() 
+                  << ", Age: " << student.getAge() << "\n";
+    }
+
+    return 0;
+}
+
 // int main(int argc, char* argv[]) {
 //     std::vector<int> vec;
 //     vec.push_back(20);
