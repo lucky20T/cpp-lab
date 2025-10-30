@@ -35,6 +35,14 @@ class Student
     {
         return m_id;
     }
+
+    void print()
+    {
+        std::cout << "First Name: " << m_first << "\n";
+        std::cout << "Last Name: " << m_last << "\n";
+        std::cout << "Age: " << m_age << "\n";
+        std::cout << "ID: " << m_id << "\n";
+    }
 };
 
 int main(int argc, char* argv[])
@@ -44,7 +52,7 @@ int main(int argc, char* argv[])
     Student s2("Jane", "Smith", 22, 2);
     Student s3("Alice", "Johnson", 19, 3);
 
-    std::cout << "student 1:"<<s1.getAge()<<"\n";
+    s1.print();
     
     return 0;
 }
