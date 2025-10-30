@@ -44,6 +44,7 @@ int main(int argc, char* argv[])
     Student s2("Jane", "Smith", 22, 2);
     Student s3("Alice", "Johnson", 19, 3);
 
+    std::cout << "student 1:"<<s1.getAge()<<"\n";
     
     return 0;
 }
