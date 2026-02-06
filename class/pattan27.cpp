@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-
     int n;
     cout<<"Enter a number: ";
     cin>>n;
@@ -13,11 +12,18 @@ int main(){
             cout<<"  ";
         }
         
-        for(int k=0;k<nm;k++){ 
-            cout<<k+1<<" ";
+        for(int k=0;k<nm;k++){
+            if(k<nm/2){
+                cout<<k+1<<" ";
+            }
+            else{
+                cout<<nm-k<<" ";
+            } 
+            
             
         }
         nm+=2;
         cout<<endl;    
     }
+
 };
