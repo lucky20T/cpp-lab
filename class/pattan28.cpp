@@ -12,14 +12,12 @@ int main(){
             cout<<"  ";
         }
         
-        for(int k=0;k<nm;k++){
-            if(k<=nm/2){
-                cout<<k+1+i<<" ";
-            }
-            else{
-                cout<<k+1-i<<" ";
-            }
-              
+        for(int k=0;k<=nm/2;k++){
+            
+            cout<<k+1+i<<" ";
+        }
+        for(int l=nm;l>(nm/2)+1;l--){
+            cout<<l-1<<" ";
         }
         nm+=2;
         cout<<endl;    
