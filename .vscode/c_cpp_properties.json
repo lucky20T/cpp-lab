@@ -4,7 +4,7 @@
       "name": "windows-gcc-x86",
       "includePath": [
         "${workspaceFolder}/**",
-        "C:\\MinGW\\C_lib\\SFML-3.0.2\\include"
+        "C:\\msys64\\C_lib\\SFML-3.0.2_vsC\\include"
       ],
       "compilerPath": "C:/MinGW/bin/gcc.exe",
       "cStandard": "${default}",
